@@ -1,0 +1,9 @@
+<script setup>
+import { NLayoutHeader } from 'naive-ui'
+</script>
+
+<template>
+  <NLayoutHeader bordered style="padding: 20px">
+    Selamat Datang di aplikasi vue.js
+  </NLayoutHeader>
+</template>
