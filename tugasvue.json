@@ -5,7 +5,7 @@
       "nama": "Alane",
       "usia": 1,
       "jabatan": "Assistant Media Planner",
-      "tanggal_masuk": "08/02/2021",
+      "tanggal_masuk": "08/02/2022",
       "jenis_kelamin": "Female"
     },
     {
@@ -30,7 +30,7 @@
       "usia": 4,
       "jabatan": "Dental Hygienist",
       "tanggal_masuk": "12/11/2020",
-      "jenis_kelamin": "Female"
+      "jenis_kelamin": "pria"
     },
     {
       "id": 5,
@@ -7999,6 +7999,14 @@
       "jabatan": "Computer Systems Analyst I",
       "tanggal_masuk": "08/01/2021",
       "jenis_kelamin": "Genderqueer"
+    },
+    {
+      "nama": "tes 2",
+      "usia": "10",
+      "jabatan": "tess 2",
+      "tanggal_masuk": "01/01/1900",
+      "jenis_kelamin": "wanita",
+      "id": 1001
     }
   ]
 }

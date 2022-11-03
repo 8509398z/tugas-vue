@@ -1,5 +1,5 @@
 <script setup>
-import { NCard, NDataTable, NButton, NSpace, NModal, NForm, NFormItem, NInput } from 'naive-ui';
+import { NCard, NDataTable, NButton, NSpace, NModal, NForm, NFormItem, NInput, NSelect } from 'naive-ui';
 import { h, ref, onMounted, computed } from 'vue';
 import axios from 'axios'
 
@@ -17,6 +17,15 @@ const formData = ref({
   tanggal_masuk: '01/01/1900',
   jenis_kelamin: ''
 })
+
+const option = [{
+  label: "Pria",
+  value: "pria"
+},
+{
+  label: "Wanita",
+  value: "wanita"  
+}]
 
 const showModal = ref(false)
 
@@ -205,7 +214,7 @@ const handlePageChange = (page) => {
           <NInput v-model:value.date="formData.tanggal_masuk" />
         </NFormItem>
         <NFormItem label="Jenis Kelamin" path="jenis_kelamin">
-          <NInput v-model:value.date="formData.jenis_kelamin" />
+          <NSelect v-model:value="formData.jenis_kelamin" :options="option"/>
         </NFormItem>
         <NFormItem label="&nbsp;">
           <NButton type="info" ghost attr-type="submits">Save</NButton>
